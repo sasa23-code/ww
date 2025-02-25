@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Goy</title>
+    <link rel="stylesheet" href="pas.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Вход</button>
+        </form>
+    </div>
+    <script>
+                document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('keydown', event => {
+    if (event.ctrlKey && (event.key === 'U' || event.key === 'u' || event.key === 'S' || event.key === 's' || event.key === 'I' || event.key === 'i')) {
+        event.preventDefault();
+    }
+});
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            if (username === 'Admin89889' && password === '7898782233') {
+                window.location.href = 'upr.html';
+            } else {
+                document.getElementById('error-message').style.display = 'block';
+            }
+            
+        });
+        
+    </script>
+    </div>
+</body>
+</html>
